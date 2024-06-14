@@ -1,0 +1,244 @@
+.searching-city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E2023;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+}
+
+.searching-city h1 {
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.searchhing-city__input {
+    position: relative;
+}
+
+.searchhing-city__input i {
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: .9rem;
+}
+
+.searching-city input {
+    border: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    width: 33.5rem;
+    color: black;
+}
+
+.searching-city input:focus {
+    outline: none;
+}
+
+
+.weather-city {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "city-logo city-heat city-heat weather-side"
+        "weekly-heat weekly-heat weekly-heat weather-side"
+        "city-map city-map city-map weather-side"
+        "city-map city-map city-map weather-side"
+        ". . . weather-side"
+    ;
+    gap: 2rem;
+}
+
+/* MAIN-RIGHT */
+
+.weather-side {
+    grid-area: weather-side;
+}
+
+/* CITY-LOGO */
+
+.city-logo {
+    grid-area: city-logo;
+    padding: 1rem 2rem;
+}
+
+.city-timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-timer .blog {
+    height: 2rem;
+    width: 5rem;
+    background-color: #F0F1F3;
+    border-radius: 999rem;
+}
+
+.ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 5rem;
+    background-color: #1E2023;
+    transform: translateX(0rem);
+    transition: transform .5s;
+    overflow: hidden;
+}
+
+.ball.fahrenheit {
+    transform: translateX(1.9rem);
+}
+
+.city-timer__date,
+.city-timer__time {
+    color: #2797C8;
+    font-weight: bold;
+}
+
+
+/* CITY-HEAT */
+
+.current-heat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.current-heat img {
+    width: 12rem;
+    height: 100%;
+}
+
+.temp-container {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.temp{
+    font-size: 6rem;
+}
+
+.temp span {
+    font-size: 2rem;
+}
+
+.real-feel span {
+    font-size: 1.4rem;
+    padding-left: .2rem;
+}
+
+.city-heat {
+    grid-area: city-heat;
+    
+}
+
+.city-heat-details {
+    margin: 0 4rem;
+    padding: 1rem;
+    border-bottom: 1px solid #1E2023;
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-heat-details:last-child {
+    border-bottom: none;
+}
+
+/* WEEKLY-HEAT */
+
+.weekly-heat {
+    grid-area: weekly-heat;
+    padding: 2rem 2rem;
+}
+
+/* CITY MAP */
+
+.city-map {
+    grid-area: city-map;
+    border-radius: .8rem;
+    height: 35rem;
+}
+
+.city-map iframe {
+    width: 100%;
+    height: 40rem;
+    border-radius: .8rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+@media (max-width: 1199px) {
+    .weather-city {
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "city-logo city-heat city-heat city-heat"
+            "weekly-heat weekly-heat weekly-heat weekly-heat"
+            "city-map city-map city-map city-map"
+            "city-map city-map city-map city-map"
+            "weather-side weather-side weather-side weather-side"
+        ;
+        gap: 2rem;
+    }
+
+    .weather-city .main-right {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .weather-city {
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "city-logo city-logo city-logo city-logo"
+            "city-heat city-heat city-heat city-heat"
+            "weekly-heat weekly-heat weekly-heat weekly-heat"
+            "city-map city-map city-map city-map"
+            "city-map city-map city-map city-map"
+            "weather-side weather-side weather-side weather-side"
+        ;
+        gap: 2rem;
+    }
+
+    .weather-city .main-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .searching-city {
+        flex-direction: column;
+        padding: 0;
+        /* background-color: #F0F1F3; */
+    }
+
+    .searching-city h1 {
+        order: 2;
+        padding: 2rem;
+    }
+
+    .searchhing-city__input {
+        width: 100%;
+    }
+
+    .searching-city input {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+}

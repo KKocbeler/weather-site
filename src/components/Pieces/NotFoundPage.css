@@ -1,0 +1,30 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.not-found h1 {
+    font-size: 8rem;
+    color: #1E2023;
+}
+
+.not-found h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #1E2023;
+}
+
+.not-found p {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.not-found a {
+    font-size: 1.6rem;
+    color: #2797C8;
+
+}

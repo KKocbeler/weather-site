@@ -1,0 +1,146 @@
+.footer {
+    background-color: #1E2023;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    margin-top: auto;
+}
+
+.footer-top {
+    display: flex;
+    margin-bottom: 5rem
+}
+
+/* LEFT */
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 1;
+}
+
+.footer-icons h2 {
+    color: #2797C8;
+    font-size: 3.2rem;
+}
+
+.mobile-links {
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+}
+
+.app-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #0F0F0F;
+    padding: .8rem 2.4rem;
+    border-radius: 1rem;
+    transition: background-color ease .4s;
+}
+
+.app-links:hover {
+    background-color: #2797C8;
+}
+
+.app-links i {
+    font-size: 2rem;
+    color: #F1F1F1;
+}
+
+.link-text {
+    width: 9rem;
+}
+
+.link-text span {
+ font-size: 1.1rem;
+}
+
+/* RIGHT */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.footer-menu-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: #2797C8;
+}
+
+.footer-list-item {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.footer-list-item a{
+    font-size: 1.4rem;
+    color: #F1F1F1;
+    transition: color ease .4s;
+}
+
+.footer-list-item a:hover {
+    color: #2797C8;
+}
+
+/* FOOTER-BOTTOM */
+
+.footer-bottom {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 1.2rem;
+    color: rgb(211, 216, 223);
+}
+
+.social-links i{
+    padding: 0 2rem;
+    font-size: 3rem;
+    color: rgb(211, 216, 223);
+}
+
+.social-links i:hover {
+    color: #000000;
+    transition: all .4s;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1330px) {
+    .footer-top {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .footer-icons {
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 991px ) {
+    .footer-top {
+        margin-bottom: 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        margin-bottom: 2rem;
+    }
+}
+
+

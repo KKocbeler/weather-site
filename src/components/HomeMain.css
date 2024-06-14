@@ -1,0 +1,39 @@
+.home-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin:  6rem 0rem;
+    gap: 4rem;
+}
+
+.main-left-map {
+    height: 44rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.main-left-article p {
+    margin: 3rem 0;
+    line-height: 2rem;
+
+}
+
+.main-left h4,
+.main-right h4 {
+    color: #1E2023;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-right h4::after,
+.main-left h4::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #2797C8;
+}
+
+@media (max-width: 1199px) {
+    .home-main {
+        grid-template-columns: 1fr;
+    }
+
+}
+

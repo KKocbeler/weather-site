@@ -1,0 +1,88 @@
+.home-article {
+    margin-bottom: 10rem;
+}
+
+.home-article h4 {
+    color: #1E2023;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.home-article h4::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #2797C8;
+}
+
+.article-cards {
+    display: grid;
+    padding: 0 1rem;
+    gap: 2rem;
+    grid-template-columns: 
+        repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.article-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .4s;
+    border-radius: .7rem;
+}
+
+.article-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.article-card-image img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+}
+
+.article-card-body {
+    position: relative;
+    height: 13rem;
+    padding: 1rem;
+}
+
+.article-text {
+    padding-bottom: 1rem;
+}
+
+.article-text p {
+    margin-top: 1rem ;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.article-text p,
+.article-time span {
+    color: #1E2023;
+}
+
+.article-time {
+    position: absolute;
+    bottom: .5rem;
+    right: 1.5rem;
+}
+
+.article-time > span {
+    font-size: 1.2rem;
+}
+
+/* RESOPONSVI */
+
+@media (max-width: 767px) {
+    .article-card {
+        flex-basis: 50%;
+    }
+}
+
+
+

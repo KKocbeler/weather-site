@@ -1,0 +1,48 @@
+{
+    "news": [
+        {
+            "id": "1",
+            "title":"Cherry Blossoms Blooming in The Big Apple",
+            "explanation":"The cherry blossom trees are blooming ahead of schedule in New York's Central Park after a warm winter",
+            "image":"images/news-image/cherry-blossom.webp",
+            "release-time": {
+                "year":2024,
+                "month": 5,
+                "days": 24,
+                "hours": 16,
+                "minutes": 20
+            }
+
+        },
+
+        {
+            "id": "2",
+            "title":"1 Dead, 2 Injured In Skiing Accidents On Mount Washington",
+            "explanation":"Several skiers suffered falls amid dangerous conditions over the weekend.",
+            "image":"images/news-image/mount-washington.jpg",
+            "release-time": {
+                "year":2024,
+                "month": 5,
+                "days": 20,
+                "hours": 12,
+                "minutes": 10
+            }
+            
+        },
+
+        {
+            "id": "3",
+            "title":"Louisiana Declares A Disaster - For Crawfish",
+            "explanation":"Louisiana's governor says rhe shortage is not only affecting Louisiana's economy but also our way of life.",
+            "image":"images/news-image/crawfish.jpg",
+            "release-time": {
+                "year":2024,
+                "month": 5,
+                "days": 17,
+                "hours": 17,
+                "minutes": 50
+            }
+        }
+
+    ]
+}

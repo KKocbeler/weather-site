@@ -1,0 +1,46 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.error h2 {
+    margin-bottom: 2rem;
+}
+
+.error p,
+.error a {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.error a {
+    color:  #2797C8;
+}
+
+.error img {
+    width: 20rem;
+    height: 20rem;
+}
+
+@media (max-width: 767px) {
+    .error h2 {
+        margin-bottom: 1.8rem;
+    }
+
+    .error p{
+        padding: 0 3rem;
+    }
+
+    .error p,
+    .error a {
+        font-size: 1.5rem;
+    }
+
+    .error img {
+        width: 18rem;
+        height: 18rem;
+    }
+}

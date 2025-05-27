@@ -1,4 +1,14 @@
 .contact-page {
+    margin: 5rem 0;
+}
+.contact-page h1 {
+    font-size:  4.2rem;
+    margin-top: 5rem;
+    padding: 3rem 0 0 5rem;
+    background-color: #fff;
+}
+
+.contact-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,12 +16,12 @@
 
 .contact-main {
     display: grid;
-    grid-template-columns: 35rem 1fr;
+    grid-template-columns: 2fr 5fr;
+    gap: 5rem;
     width: 100%;
     height: 50rem;
     background-color: #fff;
-    margin: 5rem 0;
-    padding: 5rem;
+    padding: 4rem;
 }
 
 .contact-info {
@@ -19,8 +29,6 @@
     flex-direction: column;
     padding: 5rem 3rem;
     gap: 3rem;
-    width: 30rem;
-    height: 40rem;
     background-color: #1E2023;
 }
 
@@ -134,8 +142,6 @@
 .form-button:hover {
     background-color: #1a62a7;
 }
-
-
 
 @media (max-width: 767px) {
     .contact-main {

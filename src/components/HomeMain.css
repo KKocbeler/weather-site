@@ -16,15 +16,15 @@
 
 }
 
-.main-left h4,
-.main-right h4 {
+.main-left h2,
+.main-right h2 {
     color: #1E2023;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.main-right h4::after,
-.main-left h4::after {
+.main-right h2::after,
+.main-left h2::after {
     content: '';
     display: block;
     border-bottom: 1px solid #2797C8;

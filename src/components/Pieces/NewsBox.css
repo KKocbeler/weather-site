@@ -27,7 +27,7 @@
 
 .news-article {
     position: relative;
-    height: 10rem;
+    min-height: 10rem;
     background-color: #fff;
     padding: 1rem;
     border-bottom-left-radius: .8rem;
@@ -46,9 +46,9 @@
 
 .news-time {
     position: absolute;
-    bottom: .4rem;
+    bottom: .5rem;
     right: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 1199px) {
@@ -60,5 +60,14 @@
 
     .side-news__news {
         margin-bottom: 1rem;
+    }
+
+    .news-article {
+        position: relative;
+        min-height: 12rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-bottom-left-radius: .8rem;
+        border-bottom-right-radius: .8rem;
     }
 }

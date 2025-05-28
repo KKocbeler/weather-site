@@ -5,12 +5,10 @@
     margin-top: auto;
 }
 
-.footer-top {
+.footer-body {
     display: flex;
     margin-bottom: 5rem
 }
-
-/* LEFT */
 
 .footer-icons {
     display: flex;
@@ -19,8 +17,8 @@
     flex: 1;
 }
 
-.footer-icons h2 {
-    color: #2797C8;
+.footer-icons .site-name {
+    color: var(--secondary-color);
     font-size: 3.2rem;
 }
 
@@ -35,6 +33,7 @@
     align-items: center;
     gap: 1rem;
     background-color: #0F0F0F;
+    color: var(--white-color);
     padding: .8rem 2.4rem;
     border-radius: 1rem;
     transition: background-color ease .4s;
@@ -46,7 +45,7 @@
 
 .app-links i {
     font-size: 2rem;
-    color: #F1F1F1;
+    color: var(--primary-color);
 }
 
 .link-text {
@@ -56,8 +55,6 @@
 .link-text span {
  font-size: 1.1rem;
 }
-
-/* RIGHT */
 
 .menu {
     display: flex;
@@ -69,7 +66,7 @@
     font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
-    color: #2797C8;
+    color: var(--secondary-color);
 }
 
 .footer-list-item {
@@ -79,46 +76,29 @@
 
 .footer-list-item a{
     font-size: 1.4rem;
-    color: #F1F1F1;
+    color: var(--primary-color);
     transition: color ease .4s;
 }
 
 .footer-list-item a:hover {
-    color: #2797C8;
+    color: var(--secondary-color);
 }
 
-/* FOOTER-BOTTOM */
-
-.footer-bottom {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.footer-bottom p {
-    font-size: 1.2rem;
-    color: rgb(211, 216, 223);
+.social-links {
+    text-align: center;
 }
 
 .social-links i{
-    padding: 0 2rem;
-    font-size: 3rem;
-    color: rgb(211, 216, 223);
+    margin: 0 1.2rem;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
-.social-links i:hover {
-    color: #000000;
-    transition: all .4s;
-}
-
-
-/* RESPONSIVE */
 
 @media (max-width: 1330px) {
-    .footer-top {
-        flex-direction: column;
+    .footer-body {
+
         margin-bottom: 3rem;
     }
 
@@ -130,7 +110,8 @@
 }
 
 @media (max-width: 991px ) {
-    .footer-top {
+    .footer-body {
+        flex-direction: column;
         margin-bottom: 1rem;
     }
 

@@ -3,16 +3,15 @@
     padding: 1rem 0;
     border-radius: .7rem;
 }
-.home-capital h4 {
+.home-capital h2 {
     font-size: 2rem;
-    margin: 0rem 0 1rem 2rem;
+    margin: 2rem 0
 }
 .home-capital .cities {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     row-gap: 2rem;
     column-gap: 1rem;
-    padding: 2rem 2rem;
 }
 
 .home-capital .city a {
@@ -42,8 +41,6 @@
     padding-left: 3rem;
     color: #F1F1F1;
 }
-
-/* RESPONSIVE  */
 
 
 

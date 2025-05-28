@@ -20,7 +20,7 @@ const HomeSearch = () => {
     return (
     <div className="search container">
         <form className="search-form" onSubmit={handleSubmit}>
-            <input type="text" placeholder='Search Locations' onChange={(e) => setKeyword(e.target.value)}/>
+            <input type="text" placeholder='Search Locations' value={keyword} onChange={(e) => setKeyword(e.target.value)}/>
             <i className="fa-solid fa-location-crosshairs" onClick={handleSubmit}></i>
         </form>
     </div>

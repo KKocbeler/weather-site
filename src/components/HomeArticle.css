@@ -2,13 +2,13 @@
     margin-bottom: 10rem;
 }
 
-.home-article h4 {
+.home-article h2 {
     color: #1E2023;
     font-size: 2rem;
     margin-bottom: 3rem;
 }
 
-.home-article h4::after {
+.home-article h2::after {
     content: '';
     display: block;
     border-bottom: 1px solid #2797C8;
@@ -18,9 +18,7 @@
     display: grid;
     padding: 0 1rem;
     gap: 2rem;
-    grid-template-columns: 
-        repeat(auto-fit, minmax(200px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .article-card {

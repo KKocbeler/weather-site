@@ -8,7 +8,7 @@ const HomeMain = () => {
     <>
         <div className="home-main container">
             <div className="main-left">
-                <h4>WORLDS WEATHER RADAR</h4>
+                <h2>WORLDS WEATHER RADAR</h2>
                 <div className="main-left-map">
                     <WeatherCityMap />
                 </div>
@@ -30,7 +30,7 @@ const HomeMain = () => {
                 </div>
             </div>
             <div className="main-right">
-                <h4>News</h4>
+                <h2>News</h2>
                 <NewsBox />
             </div>
         </div>

@@ -1,6 +1,6 @@
 #navbar {
    background-color: #1E2023;
-   padding: 2rem 0;
+   padding: 2.2rem 0;
 
 }
 
@@ -11,11 +11,19 @@
    position: relative;
 }
 
-/* NAV-LOGO */
 .nav-logo {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.nav-logo .nav-title a {
+   color: var(--secondary-color);
+   font-size: 2rem;
+}
+
+.nav-list-item a {
+   color: var(--primary-color);
 }
 
 .mobile-bar {
@@ -25,9 +33,8 @@
 
 .mobile-bar i {
    font-size: 2.4rem;
+   color: var(--secondary-color);
 }
-
-/* NAV-MENU */
 
 .nav-list {
    display: flex;
@@ -35,8 +42,6 @@
    justify-content: center;
    gap: 2rem;
 }
-
-/* MOBİLE-MENU */
 
 .mobile-menu {
    display: flex;
@@ -52,7 +57,6 @@
    overflow-x: hidden;
    z-index: 1;
    transition: all .4s;
-
 }
 
 .close-button {
@@ -70,7 +74,8 @@
 .mobile-menu h3  {
    text-align: center;
    margin: 2rem 0;
-   color: #2797C8;
+   color: var(--secondary-color);
+   font-size: 3rem;
 }
 
 .mobile-nav-list {
@@ -79,6 +84,18 @@
    align-items: center;
    gap: 3rem;
    margin-top: 5rem;
+}
+
+.mobile-nav-list-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   min-width: 20rem;
+}
+
+.mobile-nav-list-item a{
+   font-size: 2rem;
 }
 
 .mobile-bottom {
@@ -109,6 +126,7 @@
 
    .nav-logo {
       width: 100%;
+      padding: 0 .5rem;
    }
 
    .mobile-bar {

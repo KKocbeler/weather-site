@@ -1,79 +1,61 @@
-import React from 'react';
-import './HomeArticle.css'
+import './HomeArticle.css';
+
+const articles = [
+  {
+    title: 'Mars could be driving ‘giant whirlpools’ in the Earth’s deep oceans',
+    time: '10 minutes ago',
+    img: 'Images/home-article/article-1.webp',
+    alt: 'Mars causing whirlpools in Earth oceans',
+  },
+  {
+    title: 'Oldest ‘dead’ galaxy spied by Webb may cause astronomers to revise their understanding of the early universe',
+    time: '4 hours ago',
+    img: 'Images/home-article/article-2.webp',
+    alt: 'Dead galaxy seen by Webb telescope',
+  },
+  {
+    title: 'Nearly 30,000 objects are hurtling through near-Earth orbit. That’s not just a problem for space',
+    time: '2 days ago',
+    img: 'Images/home-article/article-3.webp',
+    alt: 'Space debris orbiting near Earth',
+  },
+  {
+    title: 'How to see the International Space Station from your backyard',
+    time: '7 days ago',
+    img: 'Images/home-article/article-4.webp',
+    alt: 'ISS visible from backyard',
+  },
+  {
+    title: 'A 5,000-pound satellite is expected to fall to Earth this week',
+    time: '11 days ago',
+    img: 'Images/home-article/article-5.webp',
+    alt: 'Satellite expected to fall to Earth',
+  },
+];
 
 const HomeArticle = () => {
   return (
-    <div className='home-article container'>
-        <h4>Space and Astronomy</h4>
-        <div className="article-cards">
-            <div className="article-card">
-                <div className="article-card-image">
-                    <img src="Images/home-article/article-1.webp" alt="" />
-                </div>
-                <div className="article-card-body">
-                    <div className="article-text">
-                        <p className='owerflow-text'>Mars could be driving ‘giant whirlpools’ in the Earth’s deep oceans</p>
-                    </div>
-                    <div className="article-time">
-                        <span>10 minutes ago</span>
-                    </div>
-                </div>
+    <div className="home-article container">
+      <h2>Space and Astronomy</h2>
+      <div className="article-cards">
+        {articles.map((article, index) => (
+          <article className="article-card" key={index}>
+            <div className="article-card-image">
+              <img src={article.img} alt={article.alt} />
             </div>
-            <div className="article-card">
-                <div className="article-card-image">
-                    <img src="Images/home-article/article-2.webp" alt="" />
-                </div>
-                <div className="article-card-body">
-                    <div className="article-text">
-                        <p className='owerflow-text'>Oldest ‘dead’ galaxy spied by Webb may cause astronomers to revise their understanding of the early universe</p>
-                    </div>
-                    <div className="article-time">
-                        <span>4 hours ago</span>
-                    </div>
-                </div>
+            <div className="article-card-body">
+              <h3 className="article-text">
+                <p className="overflow-text">{article.title}</p>
+              </h3>
+              <div className="article-time">
+                <span>{article.time}</span>
+              </div>
             </div>
-            <div className="article-card">
-                <div className="article-card-image">
-                    <img src="Images/home-article/article-3.webp" alt="" />
-                </div>
-                <div className="article-card-body">
-                    <div className="article-text">
-                        <p className='owerflow-text'>Nearly 30,000 objects are hurtling through near-Earth orbit. That’s not just a problem for space</p>
-                    </div>
-                    <div className="article-time">
-                        <span>2 days ago</span>
-                    </div>
-                </div>
-            </div>
-            <div className="article-card">
-                <div className="article-card-image">
-                    <img src="Images/home-article/article-4.webp" alt="" />
-                </div>
-                <div className="article-card-body">
-                    <div className="article-text">
-                        <p className='owerflow-text'>How to see the International Space Station from your backyard</p>
-                    </div>
-                    <div className="article-time">
-                        <span>7 days ago</span>
-                    </div>
-                </div>
-            </div>
-            <div className="article-card">
-                <div className="article-card-image">
-                    <img src="Images/home-article/article-5.webp" alt="" />
-                </div>
-                <div className="article-card-body">
-                    <div className="article-text">
-                        <p className='owerflow-text'>A 5,000-pound satellite is expected to fall to Earth this week</p>
-                    </div>
-                    <div className="article-time">
-                        <span>11 days ago</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </article>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default HomeArticle
+export default HomeArticle;

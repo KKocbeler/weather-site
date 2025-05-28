@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: #1E2023;
+    background-color: var(--third-color);
     opacity: .2;
 }
  
@@ -22,17 +22,18 @@
     position: absolute;
     top: 10rem;
     left: 2rem;
+    color: var(--primary-color);
 }
  
-.slogan h2 {
-    font-size: 4rem;
-    margin-bottom: 4rem;
+.slogan h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
 }
  
 .slogan p {
-    width: 40rem;
+    width: 44rem;
     font-size: 2.4rem;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 @media (max-width: 767px) {

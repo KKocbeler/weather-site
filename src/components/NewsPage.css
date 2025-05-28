@@ -67,7 +67,7 @@
     font-size: 1.2rem;
     background-color: #1A4D2E;
     padding: .5rem 1rem;
-    color: #f1f1f1;
+    color: var(--primary-color);
     min-width: 7rem;
     max-width: 10rem;
     text-align: center;

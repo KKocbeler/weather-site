@@ -5,6 +5,14 @@ import './HomeCapital.css';
 
 const HomeCapital = () => {
     
+    // NOTE:
+    // Due to the limitations of the OpenWeather API and request quotas for free usage,
+    // weather data for the cities is currently being displayed using static values.
+    // However, you can fetch live weather data asynchronously from the API
+    // using the commented-out code below.
+    // This setup can be switched to dynamic data fetching during development
+    // or when full API access becomes available.
+
     // const [capitals] = useState(["London", "Berlin", "Madrid", "Ankara", "Rome", "Paris"]);
     // const [weatherData, setWeatherData] = useState([]);
     // const [loading, setLoading] = useState(true);
@@ -40,68 +48,35 @@ const HomeCapital = () => {
     // }, [capitals])
 
     // console.log(weatherData);
+
+    const cities = [
+        { name: 'Madrid', query: 'madrid', temperature: '16 °C', icon: 'fa-sun' },
+        { name: 'Berlin', query: 'berlin', temperature: '11 °C', icon: 'fa-cloud-sun' },
+        { name: 'London', query: 'london', temperature: '9 °C', icon: 'fa-cloud-showers-heavy' },
+        { name: 'Ankara', query: 'ankara', temperature: '7 °C', icon: 'fa-cloud-meatball' },
+        { name: 'Paris', query: 'paris', temperature: '14 °C', icon: 'fa-sun' },
+        { name: 'Rome', query: 'rome', temperature: '15 °C', icon: 'fa-sun' },
+    ];
   return (
     <div className='home-capital container'>
         <div className="home-capital__body">
-        <h4>WORLDS WEATHER CONDITIONS</h4>
+            <h2>WORLDS WEATHER CONDITIONS</h2>
+            <div className="cities">
+                {
+                    cities.map((city, index) => (
+                        <div className="city" key={index}>
+                            <Link to={`/weather-details?q=${city.query}`}>
+                                <span className='city-name'>{city.name}</span>
+                                <div className="temperature">
+                                    <i className="fa-solid fa-sun"></i>
+                                    <span>{city.temperature}</span>
+                                </div>
+                            </Link>
+                        </div>
+                    ))
+                }
 
-        <div className="cities">
-            <div className="city">
-                <Link to={'/weather-details?q=madrid'}>
-                    <span className='city-name'>Madrid</span>
-                    <div className="temperature">
-                        <i className="fa-solid fa-sun"></i>
-                        <span>16 °C</span>
-                    </div>
-                </Link>
             </div>
-            <div className="city">
-                <Link to={'/weather-details?q=berlin'}>
-                    <span className='city-name'>Berlin</span>
-                    <div className="temperature">
-                        <i className="fa-solid fa-cloud-sun"></i>
-                        <span>11 °C</span>
-                    </div>
-                </Link>
-            </div>
-            <div className="city">
-                <Link to={'/weather-details?q=london'}>
-                    <span className='city-name'>London</span>
-                    <div className="temperature">
-                        <i className="fa-solid fa-cloud-showers-heavy"></i>
-                        <span>9 °C</span>
-                    </div>
-                </Link>
-            </div>
-            <div className="city">
-                <Link to={'/weather-details?q=ankara'}>
-                    <span className='city-name'>Ankara</span>
-                    <div className="temperature">
-                        <i className="fa-solid fa-cloud-meatball"></i>
-                        <span>7 °C</span>
-                    </div>
-                </Link>
-            </div>
-            <div className="city">
-                <Link to={'/weather-details?q=paris'}>
-                    <span className='city-name'>Paris</span>
-                    <div className="temperature">
-                        <i className="fa-solid fa-sun"></i>
-                        <span>14 °C</span>
-                    </div>
-                </Link>
-            </div>
-            <div className="city">
-                <Link to={'/weather-details?q=rome'}>
-                    <span className='city-name'>Rome</span>
-                    <div className="temperature">
-                        <i className="fa-solid fa-sun"></i>
-                        <span>15 °C</span>
-                    </div>
-                </Link>
-            </div>
-
-        </div>
         </div>
 
         {/* {

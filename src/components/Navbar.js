@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import './Navbar.css';
 import { Link } from "react-router-dom";
 
@@ -29,23 +29,23 @@ const Navbar = () => {
                 <div className="nav-logo">
                     <div className="nav-title">
                         <Link to={"/"}>
-                            <h1 className="c-primary">WHATWEATHER</h1>
+                            <h1>WHATWEATHER</h1>
                         </Link>
                     </div>
                     <div className={`mobile-bar ${showNavbarMenu ? 'active' : ''}` } onClick={handleNavbarMenu}>
-                        <i className="fa-solid fa-bars c-primary"></i>
+                        <i className="fa-solid fa-bars"></i>
                     </div>
                 </div>
                 <div className={`nav-menu ${showNavbarMenu ? 'active' : ''}` }>
                     <ul className="nav-list">
                         <li className="nav-list-item" onClick={handleNavbarMenu}>
-                            <Link to={"/weather-details?q=london"} className="f-normal c-light"> Weather City </Link>
+                            <Link to={"/weather-details?q=london"}> Weather City </Link>
                         </li>
                         <li className="nav-list-item" onClick={handleNavbarMenu}>
-                            <Link to={"/news"} className="f-normal c-light"> News </Link>
+                            <Link to={"/news"}> News </Link>
                         </li>
                         <li className="nav-list-item" onClick={handleNavbarMenu}>
-                            <Link to={"/contact"} className="f-normal c-light"> Contact </Link>
+                            <Link to={"/contact"}> Contact </Link>
                         </li>
                     </ul>
                 </div>
@@ -58,20 +58,20 @@ const Navbar = () => {
                     <h3>WHATWEATHER</h3>
                     <ul className="mobile-nav-list">
                         <li className="mobile-nav-list-item" onClick={handleNavbarMenu}>
-                            <i className="fa-solid fa-house f-normal"></i>
-                            <Link to={"/"} className="f-normal c-dark"> Home </Link>
+                            <i className="fa-solid fa-house"></i>
+                            <Link to={"/"}> Home </Link>
                         </li>
                         <li className="mobile-nav-list-item" onClick={handleNavbarMenu}>
-                            <i className="fa-solid fa-sun f-normal"></i>
-                            <Link to={"/weather-details?q=london"} className="f-normal c-dark"> Weather City </Link>
+                            <i className="fa-solid fa-sun"></i>
+                            <Link to={"/weather-details?q=london"}> Weather City </Link>
                         </li>
                         <li className="mobile-nav-list-item" onClick={handleNavbarMenu}>
-                            <i className="fa-solid fa-newspaper f-normal"></i>
-                            <Link to={"/news"} className="f-normal c-dark"> News </Link>
+                            <i className="fa-solid fa-newspaper"></i>
+                            <Link to={"/news"}> News </Link>
                         </li>
                         <li className="mobile-nav-list-item" onClick={handleNavbarMenu}>
-                            <i className="fa-solid fa-message f-normal"></i>
-                            <Link to={"/contact"} className="f-normal c-dark"> Contact </Link>
+                            <i className="fa-solid fa-message"></i>
+                            <Link to={"/contact"}> Contact </Link>
                         </li>
                     </ul>
                 </div>

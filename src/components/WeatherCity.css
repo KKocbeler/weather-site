@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E2023;
+    background-color: var(--third-color);
     margin-top: 2rem;
     padding: 1rem 2rem;
     border-radius: .8rem;
@@ -10,7 +10,7 @@
 
 .searching-city h1 {
     font-size: 2.8rem;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .searchhing-city__input {
@@ -37,7 +37,6 @@
     outline: none;
 }
 
-
 .weather-city {
     padding: 2rem 0;
     display: grid;
@@ -52,13 +51,9 @@
     gap: 2rem;
 }
 
-/* MAIN-RIGHT */
-
 .weather-side {
     grid-area: weather-side;
 }
-
-/* CITY-LOGO */
 
 .city-logo {
     grid-area: city-logo;
@@ -74,7 +69,7 @@
 .city-timer .blog {
     height: 2rem;
     width: 5rem;
-    background-color: #F0F1F3;
+    background-color: var(--primary-color);
     border-radius: 999rem;
 }
 
@@ -85,7 +80,7 @@
     height: 2rem;
     width: 3rem;
     border-radius: 5rem;
-    background-color: #1E2023;
+    background-color: var(--third-color);
     transform: translateX(0rem);
     transition: transform .5s;
     overflow: hidden;
@@ -97,12 +92,9 @@
 
 .city-timer__date,
 .city-timer__time {
-    color: #2797C8;
+    color: var(--secondary-color);
     font-weight: bold;
 }
-
-
-/* CITY-HEAT */
 
 .current-heat {
     display: flex;
@@ -144,7 +136,7 @@
 .city-heat-details {
     margin: 0 4rem;
     padding: 1rem;
-    border-bottom: 1px solid #1E2023;
+    border-bottom: 1px solid var(--third-color);
     display: flex;
     justify-content: space-between;
 }
@@ -153,14 +145,10 @@
     border-bottom: none;
 }
 
-/* WEEKLY-HEAT */
-
 .weekly-heat {
     grid-area: weekly-heat;
     padding: 2rem 2rem;
 }
-
-/* CITY MAP */
 
 .city-map {
     grid-area: city-map;
@@ -209,8 +197,7 @@
             "weekly-heat weekly-heat weekly-heat weekly-heat"
             "city-map city-map city-map city-map"
             "city-map city-map city-map city-map"
-            "weather-side weather-side weather-side weather-side"
-        ;
+            "weather-side weather-side weather-side weather-side";
         gap: 2rem;
     }
 
@@ -223,7 +210,6 @@
     .searching-city {
         flex-direction: column;
         padding: 0;
-        /* background-color: #F0F1F3; */
     }
 
     .searching-city h1 {

@@ -41,31 +41,31 @@ const WeatherCityForecast = ({selectedCity, toFahrenheit}) => {
                 <Loading />
             ) : (
                 <>
-                <p>5-day weather forecast</p>
-                <div className="weekly-cards">
-                    {forecast &&
-                    forecast
-                        .filter((cast, index) => index % 8 === 0)
-                        .map((cast) => (
-                        <div className="weekly-card" key={cast.dt}>
-                            <span>
-                                {
-                                    new Date(cast.dt_txt).getDay() === new Date().getDay() ? "Today" : days[new Date(cast.dt_txt).getDay()]
-                                }
-                            </span>
-                            <img src={`https://openweathermap.org/img/wn/${cast.weather[0].icon}@2x.png`} alt={cast.weather[0].description}/>
-                            <span>
-                                {
-                                    toFahrenheit ? (
-                                        `${(((cast.main.temp - 273.15) * 1.8) + 32).toFixed(0)}℉`
-                                    ) : (
-                                        `${(cast.main.temp - 273.15).toFixed(0)}℃`
-                                    )
-                                }
-                            </span>
-                        </div>
-                        ))}
-                </div>
+                    <p>5-day weather forecast</p>
+                    <div className="weekly-cards">
+                        {forecast &&
+                        forecast
+                            .filter((cast, index) => index % 8 === 0)
+                            .map((cast) => (
+                            <div className="weekly-card" key={cast.dt}>
+                                <span>
+                                    {
+                                        new Date(cast.dt_txt).getDay() === new Date().getDay() ? "Today" : days[new Date(cast.dt_txt).getDay()]
+                                    }
+                                </span>
+                                <img src={`https://openweathermap.org/img/wn/${cast.weather[0].icon}@2x.png`} alt={cast.weather[0].description}/>
+                                <span>
+                                    {
+                                        toFahrenheit ? (
+                                            `${(((cast.main.temp - 273.15) * 1.8) + 32).toFixed(0)}℉`
+                                        ) : (
+                                            `${(cast.main.temp - 273.15).toFixed(0)}℃`
+                                        )
+                                    }
+                                </span>
+                            </div>
+                            ))}
+                    </div>
                 </>
             )}
         </>
